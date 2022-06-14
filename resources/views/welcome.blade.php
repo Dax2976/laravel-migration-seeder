@@ -17,7 +17,10 @@
         <div class="content">
             @foreach ($vacations as $vacation)
                 <div class="card">
-                    <p><strong>City:</strong>{{$vacation->city}}</p>
+                    <p><strong>City:</strong> {{$vacation->city}}</p>
+                    <p><strong>Hotel:</strong> {{$vacation->hotel}}</p>
+                    <p><strong>Price:</strong> {{$vacation->price}}</p>
+                    <p><strong>Vote:</strong> {{$vacation->vote}}</p>
                 </div>
             @endforeach
         </div>

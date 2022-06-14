@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVactionTable extends Migration
+class CreateVacationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateVactionTable extends Migration
      */
     public function up()
     {
-        Schema::create('vacation', function (Blueprint $table) {
+        Schema::create('places', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('city');
@@ -30,6 +30,6 @@ class CreateVactionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vaction');
+        Schema::dropIfExists('places');
     }
 }

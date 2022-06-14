@@ -2,7 +2,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Model\Vacation;
+use App\Model\Place;
 
 class VacationTableSeeders extends Seeders{
     public function run(){
@@ -28,7 +28,7 @@ class VacationTableSeeders extends Seeders{
         ];
 
         foreach ($vacations as $vacation){
-            $newVacation = new Vacation();
+            $newVacation = new Place();
             $newVacation->city = $vacation['city'];
             $newVacation->hotel =$vacation['hotel'];
             $newVacation->price = $vacation['price'];
