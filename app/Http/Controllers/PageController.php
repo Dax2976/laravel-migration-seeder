@@ -11,6 +11,7 @@ class PageController extends Controller
 
     
        $vacations = Place::all();
+       
         return view('welcome',compact('vacations'));
         
     }

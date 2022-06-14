@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVacationTable extends Migration
+class CreatePlacesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,11 +15,11 @@ class CreateVacationTable extends Migration
     {
         Schema::create('places', function (Blueprint $table) {
             $table->id();
+            $table->string('city',50);
+            $table->string('hotel',50);
+            $table->string('price',20);
+            $table->string('vote',10);
             $table->timestamps();
-            $table->string('city');
-            $table->string('hotel');
-            $table->decimal('price',6,2);
-            $table->decimal('vote',2,1);
         });
     }
 

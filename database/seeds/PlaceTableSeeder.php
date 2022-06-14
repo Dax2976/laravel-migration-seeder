@@ -1,29 +1,35 @@
 
 <?php
 
+use App\Models\Place;
 use Illuminate\Database\Seeder;
-use App\Model\Place;
 
-class VacationTableSeeders extends Seeders{
+
+class PlaceTableSeeder extends Seeder{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
     public function run(){
         $vacations = [
             [
                 'city'=>'Roma',
                 'hotel'=>'Hotel piazza di spagna',
                 'price'=>'343€',
-                'vote'=>7.5, 
+                'vote'=>'7.5', 
             ],
             [
                 'city'=>'Ibiza',
                 'hotel'=>'Hotel Disco Hotel LA PLAYA',
                 'price'=>'743€',
-                'vote'=>9.5,
+                'vote'=>'9.5',
             ],
             [
                 'city'=>'Dubai',
                 'hotel'=>'GranHotel Sherman',
                 'price'=>'1293€',
-                'vote'=>9.9,
+                'vote'=>'9.9',
             ],
         ];
 
